@@ -1,0 +1,350 @@
+/* ==========================================================================
+General Suhply CSS files.
+========================================================================== */
+
+* {
+    /* border: 1px solid blue;     */
+}
+
+html {
+    font-size: 16px;
+    /* 16px = 1rem */
+    line-height: 1rem;
+}
+
+html,
+body,
+.page {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    color: black;
+    font-family: "Lato";
+    font-size: 0.40rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    text-shadow: none;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex: 1;
+    /* To make it static */
+}
+
+.header_left,
+.footer_left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header_center,
+.footer_center {
+    flex: 0.5 1 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.header_center>ul {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    /* overrides boostrap */
+}
+
+.header_right,
+.footer_right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_profilepicwrapper,
+.header_right_wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.header_profilepicwrapper,
+.footer_logowrapper {
+    margin-left: 0.75rem;
+}
+
+.header_right_wrapper,
+.footer_right_wrapper,
+.content_rightpanel_filterwrapper {
+    margin-right: 0.75rem;
+}
+
+#header_profilepic {
+    width: 1rem;
+    border: 0.125rem solid black;
+}
+
+#header_checkoutBasket,
+#header_searchIcon {
+    width: 1rem;
+    padding: 0.25rem;
+}
+
+.content {
+    display: flex;
+    flex: 10;
+}
+
+.content_leftpanel {
+    flex: 1;
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: auto;
+}
+
+.content_leftpanel > slick {
+    margin-right: 50%;
+    max-width: 100%;
+    height: 200%;
+}
+
+.content_leftpanel .heroImage {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.heroImage > img {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 100%;
+}
+
+#img1 {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 100%;
+}
+
+#img2 {
+    flex-grow: 5;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 100%;
+}
+
+#img3 {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 100%;
+}
+
+#img4 {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 100%;
+}
+
+#img5 {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 100%;
+}
+
+#img6 {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 100%;
+}
+
+#img7 {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 100%;
+}
+
+#img8 {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 100%;
+}
+
+.content_rightpanel {
+    flex: 1;
+    background: #f4f5f8;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.content_rightpanel_aboveimagegrid {
+    flex: 0.6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content_rightpanel_imagegrid {
+    margin: 0.125rem 1rem 0rem 1rem;
+    /* background: white; */
+    flex: 10;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: flex-start;
+    overflow: auto;
+}
+
+.imageCard {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 8rem;
+    position: relative;
+}
+
+.imageCard > img {
+    width: 100%;
+}
+
+.AddToBasket {
+    background: url("../img/Add-to-bag_maroon.png");
+    position: absolute;
+    bottom: 0.125rem;
+    right: 0.125rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    z-index: 500;
+    display: flex;
+    cursor: pointer;
+}
+
+.AddToBasket_cost {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.2rem;
+    padding-top: 0.3rem;
+    letter-spacing: initial;
+    color: white;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.loveHeart {
+    content: url("../img/loveheart.png");
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    width: 0.75rem;
+    height: 0.5rem;
+    cursor: pointer;
+}
+
+#content_filtericon {
+    width: 1rem;
+    padding: 0.25rem;
+}
+
+footer {
+    display: flex;
+    flex: 1;
+    /* To make it static */
+}
+
+.footer_logocenterwrapper,
+.footer_logowrapper,
+.footer_right_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    height: 2rem;
+}
+
+.scrollMore {
+    background: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    width: 50%;
+    z-index: 999;
+    bottom: 3.5rem;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    margin-left:50%;
+}
+
+.scrollMoreIcon {
+    height: 2rem;
+    width: 4.5rem;
+}
+
+
+/* Media Queries */
+
+@media only screen and (min-width: 480px) {
+    .content_leftpanel {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+
+    .scrollMore {
+        bottom:2.8rem;
+    }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+    }
+
+    .scrollMore {
+        bottom:2.5rem;
+    }
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}
